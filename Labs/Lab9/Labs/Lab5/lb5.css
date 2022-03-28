@@ -1,0 +1,19 @@
+th, tr, td {
+  border: 2px solid black;
+}
+tr, td, ol, ul{
+  vertical-align: top;
+  margin: auto;
+}
+table td:nth-child(4){
+  background-color: blue;
+}
+table td:nth-child(2){
+  background-color: yellow;
+}
+table td:nth-child(3){
+  background-color: magenta;
+}
+ol li{
+  background-color: red; 
+}

@@ -1,0 +1,87 @@
+/*
+  universal selector adding a box-sizing of border-box to all elements
+which tells the broswer to shrink any element to account for border width ******************* IMPORTANT*********** THIS IS WHY MY BORDER DIDNT WORK ON MOVIE PAGE)
+*/
+*{
+  box-sizing: border-box;
+}
+
+/* Changes the color of the background of the entire body of the html to lavender*/
+body{
+  background: lavender;
+}
+
+/* Changes background to yellow, adds padding between elements, automatic margin
+aligns the text to the right side and the text has a color of tomato*/
+.banner{
+  background-color: yellow;
+  padding: 20px;
+  margin:10px;
+  text-align:right ;
+  color: tomato;
+}
+
+/* changes the background to pink,
+hides any overflow
+adds a margin of 10px all around */
+.navigation{
+  background-color: rgb(250,90, 150);
+  margin: 10px;
+  overflow: hidden;
+  
+}
+/* Adds padding between the a elements,
+changes the text color to white */
+.navigation a{
+  color: white; 
+  float: left;
+  display: block;
+  text-align: center;
+  border: 2px solid transparent;
+  padding: 16px 16px;
+}
+
+/* adds border of <a> links to red when hovered
+  changes the background to white when hovered
+ changes the text color to pink when hovered
+*/
+.navigation a:hover{
+  border:  red solid 2px;
+  background: white;
+  color: rgb(250,90, 150);
+}
+
+/*
+  Changes the display to flex with row setting,
+justify content makes it so the elements absorb any free space around it
+*/
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*
+Sets the element size of the the elements in the .row to take up 30% of the screen
+*/
+.row > div{
+  width: 30%;  
+}
+
+/*
+  removes the top margin from h3 elements within the column class 
+*/
+.column  h3{
+  margin-top: 0px;
+}
+
+/*
+  makes content inside row display in a column
+  adds a border to the elements that is gold
+  padding of 10px all around
+*/
+.column{
+  flex-direction: column;
+  border: 3px gold solid;
+  padding: 10px;
+}

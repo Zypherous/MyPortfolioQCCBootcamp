@@ -1,0 +1,37 @@
+#navlist{
+  position: relative;
+}
+
+#navlist li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top:0;
+}
+#navlist, #navlist a{
+  height: 44px;
+  display: block;
+}
+
+#prev{
+  left: 20px;
+  width: 43px;
+  height: 44px;
+  background: url('img_navsprites.gif') -47px 0;
+}
+
+#home{
+  left: 70;
+   width: 46px;
+  height: 44px;
+  background: url('img_navsprites.gif')  0px 0;
+}
+
+#next {
+  left: 120;
+  width: 43px;
+  height: 44px;
+  background: url('img_navsprites.gif') -91px 0;
+}
+

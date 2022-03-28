@@ -1,0 +1,6 @@
+td, tr, th{
+  border: 2px solid black;
+}
+th:nth-child(4){
+  width: 95%;
+}

@@ -1,0 +1,17 @@
+ul  {
+  display: inline-block;
+  float:none;
+  overflow: auto;
+  list-style-type: none;
+  
+}
+li a img{
+  border: solid black 5px;
+  
+}
+.nav{
+  background-color: #E2B5EC; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

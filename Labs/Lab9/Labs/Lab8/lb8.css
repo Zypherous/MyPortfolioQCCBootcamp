@@ -1,0 +1,25 @@
+ @keyframes right-to-left{
+        from {
+          transform: translate3d(100%, 0, 0);
+        }
+        to {
+          transform: none;
+        }
+      }
+#myownP{
+   color: #AB00EF; 
+  size: 38px; 
+  text-align: center; 
+  border: 10px solid green;
+  background-color: tomato;
+  box-shadow: 10px 5px 4px gold;
+  text-shadow:2px 2px 4px purple;
+}
+.container{
+ display: flex;
+  flex-direction: row-reverse;
+}
+body{
+  background: url(https://www.maxpixel.net/static/photo/1x/Pink-Star-Cute-Wallpaper-Water-Moon-Background-1475474.jpg)  no-repeat center  center fixed;
+  background-size: cover;
+}
