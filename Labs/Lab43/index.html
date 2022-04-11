@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="ngAnimate">
+  <div>
+    <h2>Hide the div: <input type="checkbox" ng-model="myBox" </h2>
+    <div class="myBox" ng-hide="myBox"></div>
+  </div>
+
+  <div ng-app="">
+    <p> Input something in the input box</p>
+    <p> Name: <input type = "text" ng-model="name"></p>
+    <p ng-bind="name"></p>
+
+    <p>My expression is {{4+4}}</p>
+    
+  </div>
+  <div ng-app="myApp" ng-controller="personCtrl">
+    <p>My first Name is {{ fname|uppercase }}</p>
+  </div>
+</body>
+
+</html>

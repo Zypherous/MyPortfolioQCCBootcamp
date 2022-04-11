@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Lab 1/Biography: First Java Script and About Me by  Name
+</title>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="1.png">
+</head>
+
+<body><center>
+
+
+<div id="nav">
+	<div id="nav_wrapper">
+		<ul>
+		<li><a href=".#">HOME</a></li>
+		<li><a href="#l">LABS</a></li>
+		<li><a href="#">PROJECTS</a></li>
+  		<li><a href="#l">BIOGRAPHY</a></li>
+		<li><a href="#">TECHTEACH</a></li>
+		<li><a href="#">BLOG</a></li>
+		</ul>
+ 	</div> 
+</div>
+
+<button type="button" class="button" onclick="hide_unhide_all()"> Click Here to See My Info! </button>
+<table cellpadding="10" align="center" width="55%">
+
+<tr>
+<td align="center">
+<h2> Who Am I ?</h2>
+<h3 class="hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus mi nec neque varius, quis semper quam iaculis. Suspendisse pharetra urna tincidunt, viverra mauris in, dapibus purus. Nam eu convallis diam, eget fringilla magna. Nulla malesuada nulla nulla, sed pellentesque libero faucibus a. Fusce posuere tincidunt suscipit. Sed sit amet nunc quis augue sollicitudin elementum. Donec fermentum pretium ante et cursus. Etiam vel ligula ornare, sollicitudin ante non, posuere ipsum. Nunc fermentum, sem vitae lacinia condimentum, eros purus mollis quam, ut scelerisque orci ex a magna.
+</h3>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<h2>Why Am I Here?</h2>
+<h3 class="hidden"> IVivamus laoreet pretium urna, sit amet hendrerit arcu malesuada ac. Suspendisse aliquet mauris non faucibus suscipit. Proin quam orci, fermentum sed iaculis et, sollicitudin facilisis neque. Proin laoreet metus vel mattis dignissim. Nunc finibus feugiat ex, quis egestas tellus rutrum sed. Maecenas consequat elit at auctor tristique. Donec hendrerit tempus molestie. Sed in dapibus nunc. Donec et venenatis libero, non porta sapien. Cras et dui sed eros tincidunt euismod. Duis tempor malesuada velit, id venenatis ex pulvinar consequat. Morbi ultricies faucibus dolor viverra rutrum.
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<h2> Why Do I Want To Succeed In This Class?</h2>
+<h3 class="hidden"> Etiam aliquam orci id tellus euismod, nec efficitur nunc laoreet. Fusce vulputate facilisis urna at condimentum. Proin sit amet ultricies arcu, et tempus magna. Vestibulum vitae leo purus. Phasellus sed dolor justo. Fusce eget elit eget eros interdum placerat vel sit amet enim. Vestibulum sed dolor lorem. Aliquam a diam cursus, mattis lacus a, fermentum tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper nulla ac urna auctor dignissim. Cras et tortor sit amet mauris volutpat varius eu et odio. Nulla facilisi.
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<button type="button" class="button" onclick="hidden_btn()"> Click Here to See the Hidden Part of the Site! </button>
+
+<h3 id="demo"> The Hidden Part</h3>
+
+
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<div id="footer">
+
+Web Development , By Author, Index.
+</div>
+
+
+<script>
+  function hidden_btn(){
+    document.getElementById("demo").innerHTML="SURPRISE";
+  }
+
+
+</script>
+<script type = "text/javascript" src="script.js"></script>
+
+
+</body></html>

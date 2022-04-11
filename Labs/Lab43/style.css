@@ -1,0 +1,27 @@
+.wow {
+  width: 100px;
+}
+
+div{
+  background-color: purple;
+  height:100px;
+  width: 100px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  transition: all linear 1.5s;
+}
+
+.ng-hide{
+  height:0;
+  width:0;
+  background-color: transparent;
+  top: -200px;
+  left: 500px;
+}
+
+.myBox{
+  background-color: yellow;
+/*   top: 10px; */
+/*   left: 100px */
+}

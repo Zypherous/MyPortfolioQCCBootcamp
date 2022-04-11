@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "a_astro_spaceregular";
+  src: url("fonts/astrospace-webfont.woff2") format("woff2"),
+    url("fonts/astrospace-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neotericregular";
+  src: url("fonts/neoteric-webfont.woff2") format("woff2"),
+    url("fonts/neoteric-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neotericbold";
+  src: url("fonts/neotericbold-webfont.woff2") format("woff2"),
+    url("fonts/neotericbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.aboutme {
+  background-color: rgba(82, 233, 233, 0.5);
+  width: 75%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.container .row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  justify-content: center;
+}
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.button-property {
+  display: block;
+  background-color: #e41ba4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+  width: 25%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "a_astro_spaceregular";
+}
+.aboutme p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  font-size: 32px;
+  font-family: "a_astro_spaceregular";
+  text-align: center;
+}
+.aboutme p.button:hover {
+  filter: invert();
+  transform: scale(1.5);
+}
+.row p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  font-size: 20px;
+  font-family: "a_astro_spaceregular";
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.skills h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  font-size: 20px;
+  font-family: "a_astro_spaceregular";
+  text-align: center;
+}

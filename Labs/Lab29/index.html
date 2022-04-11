@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rollover Lab</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+<div>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+        </div>
+    <h1>Lab Rollover by Jonathan R</h1>
+    <hr>
+    <h3>HTML Roll over/out mouseEvent</h3>
+    <img src="1.png" width='400'
+    onmouseover="this.src='1.png';"
+    onmouseover="this.src='a.png';">
+      
+    <hr>
+    <h3>Javascript Gallery Rollover</h3>
+    <img src="a.png" width='400'>
+    <table width='1000'>
+      <tr>
+        <td> <img src="2.png" width='200'></td>
+        <td> <img src="3.png" width='200'></td>
+        <td> <img src="4.png" width='200'></td>
+        <td> <img src="5.png" width='200'></td>
+        <td> <img src="a.png" width='200'></td>
+        
+        
+      </tr>
+    </table>
+
+  
+  <center>
+  
+  
+  
+  Hello world
+  <script src="script.js"></script>
+</body>
+
+  <h2>Java Script Rollover</h2>
+
+  <img scr="2.png" width="300" name="r1"/>
+
+  <table width="1000">
+    <tr>
+      <td align="center">
+        <img src="2.png" width="200"
+             onmouseover="document.r1.src=pic1.src;"/>
+      </td>
+      <td>
+        <img src="3.png" width="200"
+          onmouseover="document.r1.src=pic2.src;"/>
+      </td>
+      <td>
+        <img src="4.png" width="200"
+          onmouseover="document.r1.src=pic3.src;"/>
+      </td>
+      <td>
+        <img src="a.png" width="200"
+          onmouseover="document.r1.src=pic5.src;"/>
+      </td>
+    </tr>
+  </table>
+</div>
+  <h2>HTML Hoverover</h2>
+
+  <img src="1.png" width="600"  
+      onmouseover="this.src='2.png';"
+      onmouseout="this.src='1.png';">
+</img>
+
+  <script>
+    if(document.images){
+      pic1=new Image();
+      pic2=new Image();
+      pic3=new Image();
+      pic4=new Image();
+      pic5=new Image();
+      pic1.src='2.png';
+      pic2.src='3.png';
+      pic3.src='4.png';
+      pic4.src='5.png';
+      pic5.src='a.png';
+    }
+    else{
+      pic1=pic2=pic3=pic4=pic5=document.r1="";
+    }
+    
+  </script>
+  
+</html>

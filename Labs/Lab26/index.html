@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab #14</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="center">
+			<h1>TEXT CHANGER</h1>
+			<button type="button" onClick="textChange()" class="button-property">Change</button>
+			<button type="button" onClick="textReset()" class="button-property">Reset</button>
+			<p id="demo">Hello!</p>
+		</div>
+	</div>
+<script>
+  function textChange(){
+    document.getElementById("demo").innerHTML="Hope you are having a wonderful day!!!"
+  }
+  function textReset(){
+    document.getElementById("demo").innerHTML="Hello!"
+  }
+ // alert("WARNING THIS LAB REQUIRES A LOT OF THOUGHT")
+  var mood= prompt("What's the weather like?")
+  alert("I heard that the weather is "+mood+ " over there!")
+  
+   var x=5;
+  var y=2;
+  console.log(x);
+  console.log(y);
+  
+</script>
+</body>
+</html>

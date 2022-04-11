@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Lands Between Tourism</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"
+    ></script>
+    <script src="jquery.rwdImageMaps.js"></script>
+    <script src="jquery.rwdImageMaps.min.js"></script>
+  </head>
+
+  <body>
+    <div class="banner-image">
+      <div class="banner-text">
+        <h1>The Lands Between</h1>
+
+        <p class="button">
+          Take me far away...
+        </p>
+      </div>
+    </div>
+    <div class="spacing">
+      <div class="spacing-text">A land both imaginable and unimaginable...</div>
+      <div class="spacing-text2">...beautiful, yet deadly</div>
+      <div class="spacing-text3">
+        Some of the <span style="color: red;">HOTTEST </span>locations around...
+      </div>
+      <div class="spacing-text4">
+        ...cusine..
+        <span style="color: black; font-size: 72px;"><br />TO DIE FOR!</span>
+      </div>
+    </div>
+    <div id="map">
+      <img
+        src="images/landsbetween.png"
+        class="map"
+        alt="Landsbetween"
+        usemap="#region-map"
+      />
+    </div>
+    <!-- <div id="container">
+      <div class="map-hovers">
+        <img src="images/liurnia.png" alt="Liurnia" />
+        <img src="images/limgrave.png" alt="Limgrave" />
+        <img src="images/caelid.png" alt="Caelid" />
+        <img src="images/roundtable.png" alt="Round Table Hold" />
+        <img src="images/farumazula.png" alt="Crumbling Farum Azula" />
+        <img
+          src="images/mountaintopofgiants.png"
+          alt="Mountain Top of The Giants"
+        />
+        <img src="images/atlusplateau.png" alt="Atlus Plateau" />
+      </div>
+    </div> -->
+    <map name="region-map" id="region-map" class="map-areas">
+      <area
+        target="_top"
+        alt="Liurnia"
+        title="Liurnia"
+        href="pages/liurnia.html"
+        coords="183,358,167,365,154,378,130,399,132,425,145,440,144,469,124,489,119,503,120,525,131,540,116,570,129,594,122,618,134,646,127,669,111,661,111,676,110,689,125,687,129,706,138,718,164,716,182,706,198,698,213,700,233,699,241,689,254,678,276,684,298,693,304,713,304,727,303,747,308,755,323,759,332,752,330,736,333,724,341,736,342,716,343,704,354,714,365,715,363,690,350,670,346,654,347,641,345,629,343,613,344,597,346,583,359,578,375,584,387,579,394,570,388,556,379,546,365,554,350,560,336,561,329,551,327,539,345,534,370,534,389,535,401,541,412,544,418,537,415,522,396,518,373,515,357,512,344,507,333,507,320,508,323,495,328,487,337,476,331,464,329,449,321,438,307,424,286,400,286,375,271,358,207,353,204,364,230,376,192,349"
+        shape="poly"
+      />
+      <area
+        target="_top"
+        alt="Limgrave"
+        title="Limgrave"
+        href="pages/limgrave.html"
+        coords="386,930,509,929,519,908,514,886,501,867,502,850,517,832,546,816,534,801,527,788,543,754,549,727,528,703,492,711,471,711,487,688,458,692,442,701,414,695,397,722,373,723,352,745,340,772,271,765,229,783,284,794,325,803,353,800,371,776,389,803,367,854,390,861,432,852,408,877,378,892"
+        shape="poly"
+      />
+
+      <area
+        target="_top"
+        alt="Caelid"
+        title="Caelid"
+        href="pages/caelid.html"
+        coords="548,761,563,769,571,785,574,803,582,812,594,817,603,818,619,825,605,839,593,848,578,862,589,872,607,877,618,861,631,869,652,867,670,860,674,845,655,840,647,830,663,829,682,838,693,843,701,842,709,826,700,806,709,791,734,788,753,783,759,770,760,749,761,730,755,709,739,706,731,689,737,680,739,663,734,647,733,628,731,617,723,609,715,599,708,592,691,585,669,586,650,603,658,631,681,655,666,672,647,676,634,662,618,662,594,660,572,660,577,645,559,622,540,643,540,670,556,679,545,680,532,684,517,692,549,714,549,750"
+        shape="poly"
+      />
+      <area
+        target="_top"
+        alt="Round Table Hold"
+        title="Round Table Hold"
+        href="pages/roundtable.html"
+        coords="16,858,69,863,128,870,156,891,163,915,19,917,9,884"
+        shape="poly"
+      />
+
+      <area
+        target="_top"
+        alt="Crumbling Farum Azula"
+        title="Crumbling Farum Azula"
+        href="pages/farumazula.html"
+        coords="912,416,943,464,936,489,942,517,974,527,991,517,1003,504,1005,479,1000,462,1015,419"
+        shape="poly"
+      />
+
+      <area
+        target="_top"
+        alt="Mountain Top of The Giants"
+        title="Mountain Top of The Giants"
+        href="pages/mountain.html"
+        coords="382,147,387,128,394,111,405,90,435,85,459,64,527,71,539,82,553,79,570,95,581,97,593,109,610,87,614,62,640,49,659,60,666,84,689,88,707,77,727,92,786,72,797,89,825,82,878,124,862,162,857,198,881,239,869,275,878,321,862,355,872,391,879,402,805,440,798,461,760,443,729,497,699,476,683,497,642,518,623,520,583,507,588,486,612,459,617,439,621,419,609,388,586,368,572,340,568,315,560,290,527,274,494,259,445,239,406,211"
+        shape="poly"
+      />
+      <area
+        target="_top"
+        alt="Atlus Plateau"
+        title="Atlus Plateau"
+        href="pages/plateau.html"
+        coords="205,308,211,274,241,272,254,252,268,246,282,279,300,275,317,282,341,284,346,252,312,230,289,225,279,204,319,194,359,195,380,199,386,211,388,235,390,256,401,267,409,254,420,280,439,297,450,307,488,301,497,316,514,332,516,366,522,381,549,377,565,385,580,407,582,423,572,446,563,460,553,485,530,495,515,470,504,453,483,456,459,465,432,479,402,480,406,445,378,449,351,444,325,420,300,408,307,385,291,353,267,343,240,340,215,334"
+        shape="poly"
+      />
+    </map>
+
+    <div class="text">
+      Select a region on the map to get a taste of the lands between!
+    </div>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="myscript.js"></script>
+  </body>
+</html>

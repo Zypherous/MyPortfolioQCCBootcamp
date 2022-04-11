@@ -1,0 +1,31 @@
+.wow {
+  width: 100px;
+}
+body{
+  background-color: purple;
+  color: red;
+  font-size: 16px;
+}
+.test{
+  width: 100%;
+  border: 3px solid black;
+  background-color: teal;
+  font-size: 23px;
+}
+
+h1{
+  color: white;
+  font-family: Garamond, serif;
+/*   float: right; */
+  display: inline-block;
+  text-align: right;
+}
+
+.right-aligned{
+    text-align: right;
+}
+
+.container{
+  display: flex;
+  flex-direction: column-reverse;
+}

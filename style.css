@@ -1,47 +1,167 @@
-*{
-  box-sizing:  border-box; 
-  margin: 0;
-  padding: 0;
-}
-body{
-  background: url(https://www.maxpixel.net/static/photo/1x/Pink-Star-Cute-Wallpaper-Water-Moon-Background-1475474.jpg)  no-repeat center  center fixed;
-  background-size: cover;
- 
-}
-.banner{
-  background-color: rgb(82,233,233);
-/*   padding: 20px;
-  margin:10px; */
-  text-align:left ;
-  color: rgb(200,0,130);
-  border-bottom-right-radius: 95%;
+@font-face {
+  font-family: "a_astro_spaceregular";
+  src: url("fonts/astrospace-webfont.woff2") format("woff2"),
+    url("fonts/astrospace-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1{
-  margin-left: 15px;
-}
-h2{
-  margin-left: 15px;
-}
-h3{
-  margin-left: 15px;
+@font-face {
+  font-family: "neotericregular";
+  src: url("fonts/neoteric-webfont.woff2") format("woff2"),
+    url("fonts/neoteric-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-table, td, tr, th {
-  border: 2px solid black;
+@font-face {
+  font-family: "neotericbold";
+  src: url("fonts/neotericbold-webfont.woff2") format("woff2"),
+    url("fonts/neotericbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-/*adds a margin of 10px all around */
-.navigation{
-  background-color: rgb(82,233,233);
-  overflow: hidden;
+html {
+  box-sizing: border-box;
+  height: 100%;
   width: 100%;
 }
-.navigation a{
-  text-decoration: none;
-  color: rgb(200,0,130);
-  padding: 8px;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: astro;
 }
-.navigation a:hover{
-  border: solid 2px rgb(200,0,130);
-  background: white;
+body {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  margin-left: 15px;
+  display: inline-block;
+  font-size: 72px;
+  font-family: "a_astro_spaceregular";
+}
+h2 {
+  margin-left: 32px;
+}
+h3 {
+  margin-left: 15px;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-text {
+  height: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.backgroundImage {
+  background: url(/images/wow.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.backgroundImage2 {
+  background: url(/images/workspace.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+/*adds a margin of 10px all around */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(68, 177, 177); */
+  background: linear-gradient(
+    0.25turn,
+    rgba(68, 177, 177, 1),
+    rgba(68, 177, 177, 0.5)
+  );
+  /* overflow: hidden; */
+  width: 10%;
+  height: 100vh;
+  /* position: fixed; */
+  text-align: left;
+  word-wrap: normal;
+}
+.navigation img {
+  float: left;
+  height: auto;
+  width: 100%;
+}
+.navigation p {
+  float: left;
+  font-size: 32px;
+  height: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  font-family: "neotericregular";
+}
+.navigation p:hover {
+  color: rgba(82, 233, 233, 1);
+  background-color: rgb(200, 0, 130);
+}
+
+#social {
+  margin-top: auto;
+}
+ul {
+  float: left;
+  font-size: 32px;
+  height: auto;
+  color: white;
+  font-family: "neotericregular";
+  width: 100%;
+}
+ul > li {
+  width: 100%;
+  list-style-type: none;
+  float: left;
+  font-size: 32px;
+  height: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  font-family: "neotericregular";
+}
+li a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+li:hover {
+  color: rgba(82, 233, 233, 1);
+  background-color: rgb(200, 0, 130);
+  width: 100%;
+}
+.skills ul li:hover {
+  transform: scale(1.5);
+  filter: invert();
 }

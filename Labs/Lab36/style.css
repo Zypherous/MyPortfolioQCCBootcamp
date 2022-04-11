@@ -1,0 +1,86 @@
+ html {
+      font-size: 10px;
+    }
+
+    body {
+/*       background-image:url(1.jpg); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: deeppink;
+      font-family: 'helvetica neue';
+      font-weight: 200;
+      font-size: 20px;
+    }
+
+    .title{
+      text-align: center;
+      font-weight: bold;
+      font-size: 32px;
+      color:yellow;
+    }
+
+
+    #top {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:yellow;
+        color:deeppink;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #top1 {
+        float: left;
+    }
+
+    #top1 a {
+        display: block;
+        color:deeppink;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #top1 a:hover:not(.active) {
+        background-color:deeppink;
+        color:white;
+    }
+
+    .active {
+        background-color:white;
+        font-weight: bold;
+    }
+
+
+        .words {
+          max-width:500px;
+          margin:50px auto;
+          background-color:purple;
+          border-radius:5px;
+          box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+          padding:1rem 2rem 1rem 5rem;
+          background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+          background-size: 100% 3rem;
+          position: relative;
+          line-height:3rem;
+          color:deeppink;
+          font-weight: bold;
+        }
+        p {
+          margin: 0 0 3rem;
+          color:Deeppink;
+        }
+
+        .words:before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          top: 0;
+          left: 30px;
+          bottom: 0;
+          border: 1px solid;
+          border-color: transparent #efe4e4;
+          color:deeppink;
+        }
