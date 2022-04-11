@@ -43,7 +43,8 @@
       </div>
 
       <div class="main-text">
-        <h1 class="main-text"> Software Engineer and Web Developer</h1>
+        <img class="centered" src="/images/me.jpg" width="350px" height="250px"/>
+        <h1 class="main-text" style="font-size: 24px;"> Software Engineer and Web Developer</h1>
         
       </div>
     </div>
@@ -686,7 +687,7 @@
       <div class="aboutme">
         <div class="container">
           <p class="button" id="home">Home</p>
-          <img class="centered" src="/images/me.jpg" width="350px" height="250px"/>
+          <!-- <img class="centered" src="/images/me.jpg" width="350px" height="250px"/> -->
           <div class="row">
             <button id="goal1" type="button" class="button-property" onclick="btn(this.id)"> Who Am I? </button>
             <p  class="hide" id="whoamI">My name is Jonathan. Im an aspiring software engineer and web developer. My journey has taken
@@ -727,7 +728,7 @@
       </div>
     </div>
     <div class="toTop" id="#scroll">
-      <a href="#top">&#8657; <br>To Top</a>
+      <a href="#">&#8657; <br>To Top</a>
     </div>
     <script src="script.js"></script>
     <script>
@@ -737,23 +738,22 @@
       function btn(thisid){
         console.log(thisid)
         if(thisid == "goal1"){
-          var element =document.getElementById("whoamI");
-          if(element.classList.contains("show")){
-            element.classList.remove("show");
-          }
-            element.classList.add("show");
+          document.getElementById("whatIdo").classList.remove("show");
+          document.getElementById("whereIgo").classList.remove("show");
+          document.getElementById("whoamI").classList.add("show");
         }else if(thisid == "goal2"){
-          var element = document.getElementById("whatIdo");
-          // if(goal2){
-            element.classList.add("show");
-          // }
-          // goal2 = !goal2
+          document.getElementById("whoamI").classList.remove("show");
+          document.getElementById("whereIgo").classList.remove("show");
+          document.getElementById("whatIdo").classList.add("show");
         }else if(thisid == "goal3"){
-          var element= document.getElementById("whereIgo");
-          // if(goal3){
-            element.classList.add("show");
-          // }
-          // goal3 = !goal3;
+          document.getElementById("whatIdo").classList.remove("show");
+          document.getElementById("whoamI").classList.remove("show");
+          document.getElementById("whereIgoI").classList.add("show");
+        }
+        else if(thisid == "home"){
+          document.getElementById("whatIdo").classList.remove("show");
+          document.getElementById("whereIgo").classList.remove("show");
+          document.getElementById("whoamI").classList.remove("show");
         }
       }
     </script>

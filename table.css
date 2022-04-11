@@ -35,6 +35,9 @@ table,
 td,
 tr,
 th {
+  width: au;
+  margin-left: auto;
+  margin-right: auto;
   /* border: 2px solid black; */
   border-collapse: separate;
   border-spacing: 0 35px;
@@ -62,9 +65,9 @@ td img:hover {
     rgba(68, 177, 177, 1),
     rgba(68, 177, 177, 0.7)
   );
-  width: 100%;
+  /* width: 100vw; */
   height: 100%;
-  line-height: 50px;
+  line-height: 35px;
   text-align: center;
   word-wrap: normal;
   box-sizing: border-box;
@@ -93,7 +96,7 @@ td img:hover {
   font-family: "a_astro_spaceregular";
 }
 .labs {
-  width: 50%;
+  /* width: 50%; */
   justify-self: center;
   display: flex;
   flex-direction: column;
