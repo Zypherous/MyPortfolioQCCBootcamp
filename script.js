@@ -11,15 +11,12 @@ $(document).ready(function () {
       $(".toTop").fadeOut();
     }
   });
-  $("#scroll").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      900
-    );
-    return false;
-  });
+  // $("#scroll").click(function () {
+  //   //   window.scrollTo({top: 0, behavior: 'smooth'}
+  //   // );
+   
+  //   return false;
+  // });
   $(".button").click(function (e) {
     var idClicked = e.target.id;
     if (idClicked == "main") {
