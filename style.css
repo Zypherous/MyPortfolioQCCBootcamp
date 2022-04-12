@@ -25,6 +25,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  background: linear-gradient(rgb(232, 47, 238), rgb(202, 36, 133));
 }
 *,
 *:before,
@@ -39,17 +40,17 @@ body {
   width: 100%;
 }
 body::-webkit-scrollbar {
-  width: 6px;               /* width of the entire scrollbar */
+  width: 6px; /* width of the entire scrollbar */
   background-color: aqua;
 }
 body::-webkit-scrollbar-track {
-  background: orange;        /* color of the tracking area */
+  background: orange; /* color of the tracking area */
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: blue;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid orange;  /* creates padding around scroll thumb */
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
 }
 h1 {
   margin-left: 15px;
@@ -74,12 +75,37 @@ h3 {
 .main-text {
   height: auto;
   display: block;
-  width: 100%;
+  width: 50%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  background: linear-gradient(
+    0.25turn,
+    rgba(68, 177, 177, 1),
+    rgba(68, 177, 177, 0.5)
+  );
+  box-shadow: inset 0px 0px 4px 2px;
+  padding: 30px;
+}
+.main-text2 {
+  height: auto;
+  display: block;
+  width: 50%;
+  text-align: LEFT;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 20px;
+  padding: 30px;
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
 }
 
 .backgroundImage {
@@ -122,6 +148,7 @@ h3 {
   /* position: fixed; */
   text-align: left;
   word-wrap: normal;
+  box-shadow: inset 0px 0px 4px 2px;
 }
 .navigation img {
   float: left;
@@ -171,10 +198,30 @@ li a {
 }
 li:hover {
   color: rgba(82, 233, 233, 1);
-  background-color: rgb(200, 0, 130);
+  /* background-color: rgb(200, 0, 130); */
   width: 100%;
 }
-.skills ul li:hover {
-  transform: scale(1.5);
+div.skills div.row {
+  width: 50%;
+}
+.row ul {
+  width: 50%;
+}
+.row ul li {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.row ul li:hover {
+  transform: scale(1.5) translate(30%);
   filter: invert();
+  width: 50%;
+}
+iframe {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  justify-content: center;
 }

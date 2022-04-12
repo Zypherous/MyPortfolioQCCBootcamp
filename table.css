@@ -60,25 +60,25 @@ td img:hover {
   padding: 10px;
 }
 .navigationLabs {
-  background: linear-gradient(
-    0.25turn,
-    rgba(68, 177, 177, 1),
-    rgba(68, 177, 177, 0.7)
-  );
-  /* width: 100vw; */
-  height: 100%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(rgba(68, 177, 177, 1), rgba(68, 177, 177, 0.1));
+  height: 1000%;
   line-height: 35px;
   text-align: center;
   word-wrap: normal;
   box-sizing: border-box;
   display: none;
   z-index: 1;
+  box-shadow: inset 0px 0px 4px 2px;
 }
 .navigationLabs p {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
   font-size: 32px;
+  padding-top: 12px;
   font-family: "a_astro_spaceregular";
 }
 .navigationLabs p:hover {
@@ -87,7 +87,8 @@ td img:hover {
 }
 .navigationLabs a {
   text-decoration: none;
-  float: left;
+  /* float: left; */
+  /* word-wrap:normal; */
   color: rgb(200, 0, 130);
   margin-top: auto;
   padding-right: 10px;
@@ -96,16 +97,23 @@ td img:hover {
   font-family: "a_astro_spaceregular";
 }
 .labs {
-  /* width: 50%; */
+  width: 50%;
   justify-self: center;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
+#navLabs {
+  margin-top: 2px;
+  box-shadow: inset 0px 0px 4px 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .navigationLabs a:hover {
   /* border: solid 2px rgb(200, 0, 130); */
-  background: white;
+  /* background: white; */
+  transform: scale(1.5, 1.5);
 }
 
 .toTop {
